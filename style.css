@@ -22,12 +22,15 @@ main {
 }
 
 .profile-pic {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
+  width: min(35vw, 140px);
+  aspect-ratio: 1 / 1;
+
   object-fit: cover;
-  margin-bottom: 20px;
-  border: 2px solid #2a2a2a;
+  border-radius: 50%;
+  display: block;
+
+  margin-bottom: 1.25rem;
+  border: 2px solid rgba(255, 255, 255, 0.15);
 }
 
 h1 {
@@ -50,23 +53,26 @@ p {
 }
 
 .links {
-  margin-top: 28px;
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 14px;
 }
 
 .links a {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
 }
 
 .links svg {
-  width: 28px;
-  height: 28px;
+  width: 20px;
+  height: 20px;
+
   fill: #aaa;
   transition: fill 0.2s ease, transform 0.2s ease;
 }
 
-.links svg:hover {
+.links a:hover svg {
   fill: #0a66c2; /* LinkedIn blue */
   transform: translateY(-2px);
 }
-
 
