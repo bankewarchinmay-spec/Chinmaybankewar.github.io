@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="style.css">
 * {
   box-sizing: border-box;
 }
@@ -72,7 +71,104 @@ p {
 }
 
 .links a:hover svg {
+  
   fill: #0a66c2; /* LinkedIn blue */
   transform: translateY(-2px);
 }
+* {
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #0f0f0f;
+  color: #eaeaea;
+}
+
+main {
+  max-width: 520px;
+  padding: 40px;
+  text-align: center;
+}
+
+.profile-pic {
+  width: min(35vw, 140px);
+  aspect-ratio: 1 / 1;
+
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+
+  margin-bottom: 1.25rem;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.subtitle {
+  margin-top: 8px;
+  margin-bottom: 24px;
+  color: #aaa;
+  font-size: 0.95rem;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #ddd;
+}
+
+.links {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 14px;
+}
+
+.links a {
+  display: inline-flex;
+  align-items: center;
+}
+
+.links svg {
+  width: 20px;
+  height: 20px;
+
+  fill: #aaa;
+  transition: fill 0.2s ease, transform 0.2s ease;
+}
+
+.links a:hover svg {
+  
+  fill: #0a66c2; /* LinkedIn blue */
+  transform: translateY(-2px);
+}
+/* ===== Top navigation ===== */
+.top-nav {
+  position: absolute;
+  top: 24px;
+  left: 32px;
+
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.nav-item {
+  color: #777;
+}
+
+.nav-item.active {
+  color: #fff;
+  border-bottom: 1px solid #555;
+  padding-bottom: 4px;
+}
