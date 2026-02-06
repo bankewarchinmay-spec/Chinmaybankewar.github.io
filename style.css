@@ -107,6 +107,8 @@ main {
 
   margin-bottom: 1.25rem;
   border: 2px solid rgba(255, 255, 255, 0.15);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h1 {
