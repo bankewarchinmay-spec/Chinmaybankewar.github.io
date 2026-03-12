@@ -1,128 +1,185 @@
 * {
-  box-sizing: border-box;
+box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+margin: 0;
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
 
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  background: #0f0f0f;
-  color: #eaeaea;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+background: #0f0f0f;
+color: #eaeaea;
 }
 
 main {
-  max-width: 520px;
-  padding: 40px;
-  text-align: center;
+max-width: 520px;
+padding: 40px;
+text-align: center;
 }
 
 .profile-pic {
-  width: min(35vw, 140px);
-  aspect-ratio: 1 / 1;
+width: min(35vw, 140px);
+aspect-ratio: 1 / 1;
 
-  object-fit: cover;
-  border-radius: 50%;
-  display: block;
+object-fit: cover;
+border-radius: 50%;
+display: block;
 
-  margin-bottom: 1.25rem;
-  border: 2px solid rgba(255, 255, 255, 0.15);
-  margin-left: auto;
-  margin-right: auto;
+margin-bottom: 1.25rem;
+border: 2px solid rgba(255, 255, 255, 0.15);
 }
 
 h1 {
-  margin: 0;
-  font-size: 2.2rem;
-  font-weight: 600;
-}
-
-h2 {
-  margin: 2rem 0 1rem 0;
-  font-size: 1.8rem;
-  font-weight: 600;
-  color: #eaeaea;
-}
-
-h3 {
-  margin: 0 0 0.5rem 0;
-  font-size: 1.1rem;
-  font-weight: 600;
+margin: 0;
+font-size: 2.2rem;
+font-weight: 600;
 }
 
 .subtitle {
-  margin-top: 8px;
-  margin-bottom: 24px;
-  color: #aaa;
-  font-size: 0.95rem;
+margin-top: 8px;
+margin-bottom: 24px;
+color: #aaa;
+font-size: 0.95rem;
 }
 
 p {
-  line-height: 1.6;
-  font-size: 1rem;
-  color: #ddd;
+line-height: 1.6;
+font-size: 1rem;
+color: #ddd;
 }
 
 .links {
-  margin-top: 1.5rem;
-  display: flex;
-  gap: 14px;
+margin-top: 1.5rem;
+display: flex;
+gap: 14px;
 }
 
 .links a {
-  display: inline-flex;
-  align-items: center;
+display: inline-flex;
+align-items: center;
 }
 
 .links svg {
-  width: 20px;
-  height: 20px;
+width: 20px;
+height: 20px;
 
-  fill: #aaa;
-  transition: fill 0.2s ease, transform 0.2s ease;
+fill: #aaa;
+transition: fill 0.2s ease, transform 0.2s ease;
 }
 
 .links a:hover svg {
-  fill: #0a66c2;
-  transform: translateY(-2px);
+
+fill: #0a66c2; /* LinkedIn blue */
+transform: translateY(-2px);
+}
+* {
+box-sizing: border-box;
 }
 
+body {
+margin: 0;
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+
+font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+background: #0f0f0f;
+color: #eaeaea;
+}
+
+main {
+max-width: 520px;
+padding: 40px;
+text-align: center;
+}
+
+.profile-pic {
+width: min(35vw, 140px);
+aspect-ratio: 1 / 1;
+
+object-fit: cover;
+border-radius: 50%;
+display: block;
+
+margin-bottom: 1.25rem;
+border: 2px solid rgba(255, 255, 255, 0.15);
+margin-left: auto;
+margin-right: auto;
+}
+
+h1 {
+margin: 0;
+font-size: 2.2rem;
+font-weight: 600;
+}
+
+.subtitle {
+margin-top: 8px;
+margin-bottom: 24px;
+color: #aaa;
+font-size: 0.95rem;
+}
+
+p {
+line-height: 1.6;
+font-size: 1rem;
+color: #ddd;
+}
+
+.links {
+margin-top: 1.5rem;
+display: flex;
+gap: 14px;
+}
+
+.links a {
+display: inline-flex;
+align-items: center;
+}
+
+.links svg {
+width: 20px;
+height: 20px;
+
+fill: #aaa;
+transition: fill 0.2s ease, transform 0.2s ease;
+}
+
+.links a:hover svg {
+
+fill: #0a66c2; /* LinkedIn blue */
+transform: translateY(-2px);
+}
 /* ===== Top navigation ===== */
 .top-nav {
-  position: absolute;
-  top: 24px;
-  left: 32px;
+position: absolute;
+top: 24px;
+left: 32px;
 
-  font-size: 0.9rem;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
+font-size: 0.9rem;
+letter-spacing: 0.05em;
+text-transform: uppercase;
 }
 
 .nav-item {
-  color: #777;
+color: #777;
 }
 
 .nav-item.active {
-  color: #fff;
-  border-bottom: 1px solid #555;
-  padding-bottom: 4px;
+color: #fff;
+border-bottom: 1px solid #555;
+padding-bottom: 4px;
 }
 
-a { 
-  color: var(--accent); 
-  text-decoration: none; 
-}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline;
+color:blue }
 
-a:hover { 
-  text-decoration: underline;
-  color: blue;
-}
-
-.social-links,
-.flex-center {
+.social-links,.flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -163,7 +220,7 @@ a:hover {
 .social-btn:hover span {
   padding: 2px;
   width: 80px;
-}
+} 
 
 #linkedin svg {
   fill: #0e76a8;
@@ -172,7 +229,6 @@ a:hover {
 #github {
   fill: #333;
 }
-
 .email {
   transition: background-color 0.2s, border-color 0.2s;
 }
@@ -196,68 +252,9 @@ a:hover {
   margin: 0 6px;
 }
 
+/* Only change the @ color on hover; do not reveal the full address */
 .email:hover a,
 .email:hover .email-symbol {
   color: white;
 }
 
-/* ===== Projects Section ===== */
-#projects {
-  margin-top: 3rem;
-  padding-top: 2rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.projects-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
-  margin-top: 1.5rem;
-}
-
-@media (min-width: 768px) {
-  .projects-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-.project-card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
-  padding: 1.5rem;
-  text-align: left;
-  transition: all 0.3s ease;
-}
-
-.project-card:hover {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.2);
-  transform: translateY(-4px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
-
-.project-card h3 {
-  color: #eaeaea;
-  margin-bottom: 0.75rem;
-}
-
-.project-card p {
-  font-size: 0.95rem;
-  color: #aaa;
-  margin-bottom: 1rem;
-}
-
-.project-link {
-  display: inline-block;
-  color: #0a66c2;
-  font-size: 0.9rem;
-  font-weight: 500;
-  transition: all 0.2s ease;
-  text-decoration: none;
-}
-
-.project-link:hover {
-  color: #0e76a8;
-  text-decoration: underline;
-}
